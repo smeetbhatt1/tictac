@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    tools:context="com.example.smeetbhatt.tictactoe.NamesActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_centerVertical="true"
+        android:background="#fff">
+
+        <EditText
+            android:id="@+id/firstPlayerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter First Player Name"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/secondPlayerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstPlayerEditText"
+            android:gravity="center"
+            android:hint="Enter Second Player Name"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="25sp"
+            android:imeOptions="actionDone"/>
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondPlayerEditText"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="Play"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
